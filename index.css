@@ -13,3 +13,21 @@ body{
   border: 5px white solid;
 
 }
+
+.block{
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.search{
+ width: 50%;
+ height: 25px;
+ background-color: white;
+}
+
+
+input{
+  padding: 10px;
+}

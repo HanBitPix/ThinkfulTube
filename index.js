@@ -37,7 +37,7 @@ function renderResult(result) {
   return `
     <div class="thumbnails">
        <h4>${videoTitle}</h4>
-       <a" href="https://www.youtube.com/watch?v=${videoID}" target="_blank"><img src="${thumbnailImage}" width="${imageWidth}" height="${imageHeight}"/></a>
+       <a href="https://www.youtube.com/watch?v=${videoID}" target="_blank"><img src="${thumbnailImage}" alt="${videoTitle}" width="${imageWidth}" height="${imageHeight}"/></a>
     </div>
   `;
 }
@@ -57,6 +57,7 @@ function watchSubmit() {
     // clear out the input
     queryTarget.val('');
     getDataFromApi(query, displayYoutubeSearchData);
+    $('main').show('block');
   });
 }
 

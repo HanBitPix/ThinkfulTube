@@ -11,22 +11,21 @@
   <link href="index.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <h1>Search YouTube Videos by Title</h1>
-  </header>
-  <main>
-    <form action="#" class="js-search-form">
-      <label for="query"></label>
-      <input type="text" class="js-query">
-      <button type="submit">Search</button>
+    <h1>Thinkful Tube</h1>
+    <form action="#" name="youtube-search" class="js-search-form">
+      <label for="search-videos">Search for YouTube Videos by Title</label>
+      <input aria-label="search by title" placeholder="search by title" class="block js-query" type="text">
+      <button class="search block" type="submit">Submit</button>
     </form>
+  </header>
 
-    <h2>Results</h2>
-          <div class="js-search-results">
-            
-          </div>
+  <main role="main" class="js-search-results" aria-live="assertive" hidden>
+   
   </main>
+  
   <script src="index.js"></script>
 </body>
 </html>
